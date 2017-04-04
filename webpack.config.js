@@ -1,6 +1,4 @@
-const {
-  resolve
-} = require('path')
+const {resolve} = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const url = require('url')
@@ -19,9 +17,9 @@ module.exports = (options = {}) => ({
   },
   module: {
     rules: [{
-        test: /\.vue$/,
-        use: ['vue-loader']
-      },
+      test: /\.vue$/,
+      use: ['vue-loader']
+    },
       {
         test: /\.js$/,
         use: ['babel-loader'],
@@ -72,7 +70,8 @@ module.exports = (options = {}) => ({
   ],
   resolve: {
     alias: {
-      '~': resolve(__dirname, 'src')
+      '~': resolve(__dirname, 'src'),
+      config: resolve(__dirname, options.dev ? 'src/config/dev.index.js' : 'src/config')
     }
   },
   devServer: {

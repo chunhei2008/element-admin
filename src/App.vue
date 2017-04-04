@@ -5,11 +5,17 @@
 </template>
 
 <script>
+
 </script>
 
 <style>
-body {
+body,div {
   margin: 0;
   padding: 0;
+}
+
+#app{
+  display: flex;
+  height: 100vh;
 }
 </style>
