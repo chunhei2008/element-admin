@@ -1,5 +1,14 @@
 # element-admin
 
+## 技术栈
+
+ - vue
+ - element-ui
+ - es6
+ - axios
+ - vuex
+ - vue-router 
+
 ## Environment
 
 `Node >= 6`
