@@ -3,8 +3,8 @@
     <div class="header fixed-top">
       <el-dropdown class="profile float-right" @command="dropdownMenuCommand">
         <span class="el-dropdown-link">
-                              {{user.name}}<i class="el-icon-caret-bottom el-icon--right"></i>
-                            </span>
+                                {{user.name}}<i class="el-icon-caret-bottom el-icon--right"></i>
+                              </span>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item command="change-password">修改密码</el-dropdown-item>
           <el-dropdown-item command="logout">退出</el-dropdown-item>
@@ -18,6 +18,7 @@
           <el-menu-item index="/sms/tpl-list"><i class="el-icon-message"></i>模板列表</el-menu-item>
           <el-menu-item index="/sms/send-logs"><i class="el-icon-message"></i>发送记录</el-menu-item>
           <el-menu-item index="/member/export"><i class="el-icon-message"></i>会员导出</el-menu-item>
+          <el-menu-item index="/import"><i class="el-icon-message"></i>资料导入</el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="20" class="main">

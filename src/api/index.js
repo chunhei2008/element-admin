@@ -65,5 +65,28 @@ export default {
   },
   ChangePassword(params) {
     return axios.post('/api/vue/user/change-password', params)
+  },
+  Upload(params) {
+    let token = store.getters.token
+    return config.api + '/api/vue/upload?token=' + token
+  },
+  CheckHandset(params) {
+    return axios.get('/api/vue/upload/check-handset', {
+      params: params
+    })
+  },
+  UploadedFiles(params) {
+    return axios.get('/api/vue/upload/uploaded-files', {
+      params: params
+    })
+  },
+  RemoveFile(params) {
+    return axios.post('/api/vue/upload/remove-file', params)
+  },
+  Clear(params) {
+    return axios.post('/api/vue/import/clear', params)
+  },
+  ImportConfirm(params) {
+    return axios.post('/api/vue/import/confirm', params)
   }
 }

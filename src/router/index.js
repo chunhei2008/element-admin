@@ -19,6 +19,8 @@ import Export from '../pages/member/Export.vue'
 import TplAdd from '../pages/sms/TplAdd.vue'
 import TplList from '../pages/sms/TplList.vue'
 import SendLogs from '../pages/sms/SendLogs.vue'
+// import
+import SalonImport from '../pages/import/SalonImport.vue'
 
 export default new Router({
   linkActiveClass: 'active',
@@ -46,6 +48,10 @@ export default new Router({
         {
           path: 'sms/send-logs',
           component: SendLogs
+        },
+        {
+          path: 'import',
+          component: SalonImport
         }
       ],
       beforeEnter: (to, from, next) => {
