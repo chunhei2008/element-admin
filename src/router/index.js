@@ -21,6 +21,7 @@ import TplList from '../pages/sms/TplList.vue'
 import SendLogs from '../pages/sms/SendLogs.vue'
 // import
 import SalonImport from '../pages/import/SalonImport.vue'
+import SalonImportLog from '../pages/import/SalonImportLog.vue'
 
 export default new Router({
   linkActiveClass: 'active',
@@ -52,6 +53,10 @@ export default new Router({
         {
           path: 'import',
           component: SalonImport
+        },
+        {
+          path: 'import/log',
+          component: SalonImportLog
         }
       ],
       beforeEnter: (to, from, next) => {

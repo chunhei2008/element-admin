@@ -1,7 +1,6 @@
 
-//const api = 'https://tools.meimeifa.com';
-const api = 'http://mgt.laravel.com:8089';
+const api = window.location.origin
 
 export default {
-    api
+  api
 }

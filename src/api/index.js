@@ -88,5 +88,13 @@ export default {
   },
   ImportConfirm(params) {
     return axios.post('/api/vue/import/confirm', params)
+  },
+  ImportCancel(params) {
+    return axios.post('/api/vue/import/cancel', params)
+  },
+  ImportLog(params) {
+    return axios.get('/api/vue/import/log', {
+      params: params
+    })
   }
 }
