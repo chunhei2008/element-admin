@@ -8,7 +8,7 @@
             </el-table-column>
             <el-table-column label="导入类型">
                 <template scope="scope">
-                        {{active[scope.row.active]}}
+                                {{active[scope.row.active]}}
 </template>
             </el-table-column>
             <el-table-column prop="client_file_name" label="文件名">
@@ -93,7 +93,6 @@
             download(id) {
                 let token = this.$store.getters.token;
                 let url = config.api + '/api/vue/import/download?token=' + token + '&id=' + id
-                console.log(url)
                 window.open(url)
             },
             cancel(row) {
