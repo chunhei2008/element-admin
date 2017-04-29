@@ -142,7 +142,7 @@
                 <el-table :data="templates" border style="width: 100%">
                     <el-table-column label="模板类型" width="180">
                         <template scope="scope">
-                     {{active[scope.row.active]}}
+                         {{active[scope.row.active]}}
 </template>
                     </el-table-column>
                     <el-table-column label="下载">
@@ -193,6 +193,9 @@
                 this.selectFileName = ''
                 this.fileList = []
                 if (!this.isClerkHandset) {
+                    return
+                }
+                if (this.form.active === 'template') {
                     return
                 }
                 let params = this.form
