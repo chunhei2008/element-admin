@@ -104,6 +104,7 @@
           return
         }
         this.disabled = true
+        this.form.handset = ''
         api.SmsSend(params)
           .then(res => {
             this.disabled = false
